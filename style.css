@@ -1,0 +1,57 @@
+body
+{
+    display: flex; 
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    gap: 0.5em;
+}
+img{
+    display: inline-block;
+}
+#intro{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+#user{
+    display: flex; 
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    gap: 0.3em;
+    margin-left: 3rem;
+}
+#info{
+    display: flex; 
+    justify-content: center;
+    align-items: left;
+    gap: 0.3em;
+}
+#posting{
+    flex: 1;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0.25em;
+    background-color: rgb(57, 19, 208);
+
+}
+#container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+#display_image
+{
+    width: 375px;
+    height: 211px;
+    border: 1px solid black;
+    background-position: left;
+    background-size: cover;
+    float: left;
+    padding: 5px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
