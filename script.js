@@ -10,12 +10,12 @@ input.onclick = function(){
 function updateNumberPost()
 {
     var str = number_post.toString().bold()
-        if (number_post > 1) { 
-            numberArea.innerHTML = str + " posts"
-        }
-        else {
-            numberArea.innerHTML = str + " post"
-        }
+    if (number_post > 1) { 
+        numberArea.innerHTML = str + " posts"
+    }
+    else {
+        numberArea.innerHTML = str + " post"
+    }
 }
 
 input.addEventListener("change", function(e) {
