@@ -1,8 +1,12 @@
 body
 {
-    display: flex; 
+    display: center; 
     justify-content: center;
     align-items: left;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    margin-right: 30px;
+    margin-left: 160px;
     flex-direction: column;
     gap: 0.5em;
 }
@@ -13,6 +17,7 @@ img{
     flex: 1;
     display: flex;
     align-items: center;
+    margin: auto
 }
 #user{
     display: flex; 
