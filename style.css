@@ -3,19 +3,28 @@ body
     display: center; 
     justify-content: center;
     align-items: left;
-    margin: auto;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
     flex-direction: column;
     width: 70%;
-    gap: 0.5em;
+    gap: 0.5rem;
+    background-color: white;
+    color: black;
 }
 img{
     display: inline-block;
+}
+.circular{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%; 
 }
 #intro{
     flex: 1;
     display: flex;
     align-items: center;
-    margin: auto
+    margin-bottom: 20px;
 }
 #user{
     display: flex; 
