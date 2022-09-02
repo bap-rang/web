@@ -9,16 +9,31 @@ body
     flex-direction: column;
     width: 70%;
     gap: 0.5rem;
-    background-color: white;
-    color: black;
+    background-color: rgb(18, 18, 18);
+    color: white;
 }
 img{
     display: inline-block;
 }
+.content#blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
 .circular{
     width: 140px;
     height: 140px;
     border-radius: 50%; 
+}
+#pop-up{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
 }
 #intro{
     flex: 1;
