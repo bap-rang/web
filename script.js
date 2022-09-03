@@ -3,8 +3,10 @@ const input = document.querySelector("#image_input")
 const container = document.querySelector("#container")
 const numberArea = document.querySelector("#number_post")
 const popup = document.querySelector("#pop-up")
+const blur = document.querySelector("#blur")
 var number_post = 0
 var uploader = ""
+popup.style.display = "none";
 input.onclick = function(){
     this.value = null;
 }
@@ -20,16 +22,34 @@ function updateNumberPost()
     }
 }
 
-function toggle()
+function removeImage(image)
 {
-    var blur = document.querySelector("#blur")
-    blur.classList.toggle('active')
+    image.remove();
+    number_post--;
+    updateNumberPost();
+    popup.removeChild(popup.firstChild);
+    popup.style.display = "none";
+    blur.style.filter = "none";
 }
-console.log(body)
-// body.addEventListener("click", function(e) {
-//     if (e.target.classList === "")
-//     //toggle()
-// })
+
+function clickX(){
+    document.querySelector("#pop-up span").onclick = () =>{ 
+        popup.removeChild(popup.firstChild);
+        popup.style.display = "none";
+        blur.style.filter = "none";
+    }
+}
+
+function pressEsc()
+{
+    document.addEventListener('keydown', function(event){
+        if(event.key === "Escape"){
+            popup.removeChild(popup.firstChild);
+            popup.style.display = "none";
+            blur.style.filter = "none";
+        }
+    });
+}
 input.addEventListener("change", function(e) {
     const reader = new FileReader();
     reader.addEventListener("load", () =>{
@@ -41,18 +61,24 @@ input.addEventListener("change", function(e) {
         container.insertBefore(display, container.firstChild)
         number_post++
         display.addEventListener("click", function(e) {
-            //display.remove()
-            //number_post--
-            //updateNumberPost()
-            toggle()
+            blur.style.filter = "blur(20px)";
             var popupimg = document.createElement("div")
             popupimg.setAttribute("id", "display_image")
             popupimg.style.backgroundImage = display.getAttribute("src")
             popupimg.style.transform = "scale(2)";
             popup.insertBefore(popupimg, popup.firstChild)
+            popup.style.display = "block";
+            document.querySelector("#pop-up button").onclick = () =>{
+                removeImage(display);
+            }
+            clickX()
+            pressEsc()
         })
         updateNumberPost()
     })
     reader.readAsDataURL(this.files[0])
 })
+
+
+
 

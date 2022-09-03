@@ -8,17 +8,21 @@ body
     margin-right: auto;
     flex-direction: column;
     width: 70%;
+    height: 100%;
     gap: 0.5rem;
-    background-color: rgb(18, 18, 18);
-    color: white;
+    background-color: white;
+    color: black;
 }
 img{
     display: inline-block;
 }
-.content#blur.active{
-    filter: blur(20px);
-    pointer-events: none;
-    user-select: none;
+.header{
+    margin-top: -4rem;
+    text-align: center;
+    background: white;
+    color: black;
+    font-size: 30px;
+    font-style: italic;
 }
 
 .circular{
@@ -26,14 +30,29 @@ img{
     height: 140px;
     border-radius: 50%; 
 }
-#pop-up{
+ 
+
+#pop-up #display_image{
     position: absolute;
     top: 40%;
     left: 40%;
     margin-top: -50px;
-    margin-left: -50px;
-    width: 100px;
-    height: 100px;
+    margin-left: -50px; 
+}
+#pop-up span{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: black;
+    cursor: pointer;
+    z-index: 100;
+}
+#pop-up button{
+    position: absolute;
+    top: 22px;
+    right: 50px;
 }
 #intro{
     flex: 1;
@@ -62,7 +81,8 @@ img{
     align-items: center;
     text-align: center;
     padding: 0.25em;
-    background-color: rgb(57, 19, 208);
+    background-color: #2196F3;
+    border-radius:10%;
 
 }
 #container::after {
