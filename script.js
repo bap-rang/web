@@ -71,14 +71,13 @@ input.addEventListener("change", function(e) {
             document.querySelector("#pop-up button").onclick = () =>{
                 removeImage(display);
             }
-            clickX()
-            pressEsc()
         })
         updateNumberPost()
     })
     reader.readAsDataURL(this.files[0])
 })
 
-
+clickX()
+pressEsc()
 
 
