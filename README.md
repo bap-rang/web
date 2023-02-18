@@ -4,7 +4,7 @@ Posting Image Website
 
 
 Zoom in a picture
-<img width="932" alt="Screenshot_20230219_020055" src="https://user-images.githubusercontent.com/80674608/219883519-912f18ca-3f44-4b4f-8a4d-4c3728c7f8b6.png">
+<img width="632" alt="Screenshot_20230219_020055" src="https://user-images.githubusercontent.com/80674608/219883519-912f18ca-3f44-4b4f-8a4d-4c3728c7f8b6.png">
 
 
 Remove a picture: number of posts is decreased.
