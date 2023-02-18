@@ -4,8 +4,8 @@
 
 
 - Zoom in a picture
-<img width="632" alt="Screenshot_20230219_020055" src="https://user-images.githubusercontent.com/80674608/219883519-912f18ca-3f44-4b4f-8a4d-4c3728c7f8b6.png">
+<img width="696" alt="Screenshot_20230219_020055" src="https://user-images.githubusercontent.com/80674608/219883519-912f18ca-3f44-4b4f-8a4d-4c3728c7f8b6.png">
 
 
 - Remove a picture: number of posts is decreased.
-<img width="638" alt="Screenshot_20230219_020348" src="https://user-images.githubusercontent.com/80674608/219883596-a0ab042f-7982-4358-96c6-07a1d804391c.png">
+<img width="696" alt="Screenshot_20230219_020348" src="https://user-images.githubusercontent.com/80674608/219883596-a0ab042f-7982-4358-96c6-07a1d804391c.png">
